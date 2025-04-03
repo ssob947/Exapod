@@ -49,19 +49,21 @@ Questo repository documenta lo sviluppo di un esoscheletro robotico a 6 zampe pr
 ##  Checklist operativa Fase 1 – Camminata base
 
 ###  Preparazione hardware
-- [ ] Stampare i **piedini in TPU** (testare grip e flessibilità)
+- [ ] Stampare i tip in TPU (flessibilità)
+- [ ] stampare Tibia con alloggio switch del tip
+- [X] ammortizzamento tibia. NO: ammortizzamento oltre 2mm vanifica sline e raccordi se non cinematica stessa, spostare eventualmente in progetto finale in piastra di alloggio vano di carico centrale
 - [ ] Verificare fissaggio piedino su tibia
 - [ ] Montare una gamba singola per test (J1–J2–J3)
 
 ###  Software
 - [ ] Ottimizzare ciclo del passo con **spline e easing**
-- [ ] Impostare camminata tripode iniziale (o test singola zampa)
+- [ ] test singola zampa
 - [ ] Verificare fluidità, senza vibrazioni o strattoni
 
 ###  Test e validazione
 - [ ] Testare camminata in avanti (ciclo completo)
 - [ ] Controllare temperatura servo dopo vari cicli
-- [ ] Logging angoli/calcoli via `Serial` (per debug futuro)
+- [ ] Logging angoli/calcoli via `Serial` (per debug futuro), per ora commentati
 
 ---
 
