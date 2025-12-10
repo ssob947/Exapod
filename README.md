@@ -40,4 +40,60 @@ The project focuses on accuracy, modularity, and maintainability.
 ---
 
 ## 3. Repository Structure
+mechanics/
+cad/ CAD models for legs and body
+laser_cut_parts/ DXF files for aluminium cutting
+3d_printed_parts/ STL and source files
 
+electronics/
+schematics/ Power distribution and protection
+components/ Notes on key parts and testing
+wiring_diagrams/ Integration notes and cabling
+
+docs/
+calibration/ Servo and encoder calibration data
+measurements/ Reference values and offset tables
+images/ Photos of prototypes and assemblies
+
+firmware/
+(To be added later)
+
+
+Firmware is intentionally omitted at this stage; it will be published once development begins.
+
+---
+
+## 4. Project Status
+
+### Completed
+- Mechanical prototype of one full leg  
+- Encoder diagnostics (AGC and MAG reference)  
+- Calibration procedure and linear mapping for servos  
+
+### In Progress
+- Body frame fabrication  
+- Mechanical refinement of legs  
+- Power system evaluation  
+
+### Upcoming
+- Full controller firmware (Teensy 4.1)  
+- Inverse kinematics  
+- Gait generation  
+- Integration of all six legs  
+
+---
+
+## 5. Documentation
+
+Detailed documentation can be found under `docs/`, including:
+
+- calibration data and tables  
+- reference measurements  
+- diagrams and testing notes  
+
+---
+
+## 6. License
+
+This project is intended to be released under the MIT License.  
+A `LICENSE` file will be added accordingly.
