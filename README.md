@@ -1,70 +1,41 @@
-# Exapod
+Exapod – Modular Six-Leg Robot
 
-Questo repository documenta lo sviluppo di un esoscheletro robotico a 6 zampe progettato per camminare in modo fluido e trasportare oggetti delicati come bicchieri pieni di birra. Il progetto è modulare, ingegnerizzato per robustezza, compensazione meccanica e adattabilità.
+Work in progress.
+This repository documents the development of a fully custom hexapod robot, including mechanics, electronics, and joint calibration methods. Firmware will be added as soon as actual implementation work begins.
 
----
+Main Features
 
-##  Roadmap di sviluppo
+Modular legs with GXServo QY3242BLS brushless servos
 
-###  FASE 1 – Camminata base (versione leggera)
- *Far camminare il robot in avanti in modo fluido e stabile*
+Absolute encoders (AS5600 or MT6835) on each joint
 
-- Stampare i **piedini in TPU** per assorbire micro-imprecisioni
-- Ottimizzare il **ciclo del passo** con spline, easing e raccordi morbidi
-- Test su **una gamba** o su **camminata intera tripode**
-- Validare fluidità, stabilità e corretto caricamento dei servo (anche a vuoto)
-- *(Niente microswitch per passo completato, in vista della futura camminata curva)*
+Mechanical structure in aluminium and 3D-printed parts
 
-###  FASE 2 – Prototipo con servo Miuzei 15kg/cm
- *Testare tutto il sistema con componenti reali e prime simulazioni di carico*
+Custom power distribution (TDK-Lambda i7A, TVS protection, BTS443P high-side switches)
 
-- Fare una **lista componenti completa**
-- Ordinare **tutto per UNA zampa** → montarla e testarla
-- Se va bene, procedere con ordine per  tutte le zampe
-- Realizzare una **bozza di telaio centrale** con **vano di carico**
-- Impostare un primo **layout cablaggio** completo già pronto per la versione definitiva
-  *(layout ordinato ed estetico solo dopo il prototipo; **dissipatori** da considerare già ora)*
+Detailed joint calibration pipeline (calibrated offsets, linear mapping, MAG/AGC reference)
 
-###  FASE 3 – Ottimizzazione software e calibrazione hardware
- *Correggere angoli reali, allineare coordinate e preparare il sistema per versioni future*
+Repository Structure
 
-- Spostare il **frame centrale** al baricentro del robot
-- Scrivere routine per **calibrazione offset servo**
-- Pensare (tempo permettendo) a **switch o sensori per calibrazione automatica**
-- Implementare la **camminata curva**
-- Aggiungere un **sensore a ultrasuoni** e iniziare:
-  - rilevamento ostacoli
-  - strategia di evitamento in base alla direzione
+mechanics/
+Models, drawings, 3D-printed parts, and laser-cut parts.
 
-###  FASE 4 – Passaggio al sistema definitivo
- *Implementare il robot finale con brushless, struttura robusta e rifinitura software completa*
+electronics/
+Schematics, power distribution notes, and component documentation.
 
-- Sostituire servo con **brushless 40kg/cm**
-- Verificare **struttura, dissipazione e assorbimenti**
-- Finalizzare cablaggio, telaio, PCB e layout completo
-- Validare camminata su piano, curva, con carico e in ambienti reali
+docs/
+Calibration data, measurements, reference notes, and project documentation.
 
----
+firmware/
+To be added later.
+(No firmware is included yet; real implementation will be published once development begins.)
 
-##  Checklist operativa Fase 1 – Camminata base
+Project Status
 
-###  Preparazione hardware
-- [ ] Stampare i tip in TPU (flessibilità)
-- [ ] stampare Tibia con alloggio switch del tip
-- X ammortizzamento tibia. NO: ammortizzamento oltre 2mm vanifica sline e raccordi se non cinematica stessa, spostare eventualmente in progetto finale in piastra di alloggio vano di carico centrale
-- [ ] Verificare fissaggio piedino su tibia
-- [ ] Montare una gamba singola per test (J1–J2–J3)
+Mechanical prototype for a full leg completed
 
-###  Software
-- [ ] Ottimizzare ciclo del passo con **spline e easing**
-- [ ] test singola zampa
-- [ ] Verificare fluidità, senza vibrazioni o strattoni
+Encoder diagnostics and calibration procedure defined
 
-###  Test e validazione
-- [ ] Testare camminata in avanti (ciclo completo)
-- [ ] Controllare temperatura servo dopo vari cicli
-- [ ] Logging angoli/calcoli via `Serial` (per debug futuro), per ora commentati
+Power system under evaluation
 
----
-
-##  Note
+Full controller firmware not started yet (will be documented here when available)
