@@ -59,7 +59,7 @@ predictable kinematics rather than speed.
   Schematics, PCB design files, and Gerber outputs
 
 - `docs/`  
-  Calibration data, measurements, test results, and development notes
+  Calibration data, measurements, test results, development notes, and current prototype images.
 
 - `firmware/`  
   Intentionally omitted at this stage
