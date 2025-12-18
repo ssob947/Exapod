@@ -1,4 +1,4 @@
-# Exapod – Modular Six-Leg Robot
+# Hexapod – Modular Six-Leg Robot
 
 **Work in progress.**
 
