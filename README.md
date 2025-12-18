@@ -16,7 +16,7 @@ Custom six-leg robot designed from scratch with focus on:
 - robust power distribution
 - maintainable control architecture
 
-The target application is **object transport**, with emphasis on stability and
+The target application is **object transport** on flat surfaces, with emphasis on stability and
 predictable kinematics rather than speed.
 
 ---
