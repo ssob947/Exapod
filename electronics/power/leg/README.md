@@ -6,7 +6,8 @@
 STATUS: TEST / WORK IN PROGRESS
 
 This PCB revision is currently under validation.  
-During this phase, differences between the uploaded Gerber files and the PCB pictures may occur.
+During this phase, minor differences may exist between the uploaded Gerber files
+and the assembled PCB shown in the photos (e.g. TVS or XT60 silkscreen orientation).
 
 
 ---
