@@ -23,7 +23,7 @@ predictable kinematics rather than speed.
 
 ## Hardware Highlights
 
-### 3D
+### Mechanics
 - Aluminium laser-cut structure
 - 3D-printed structural and interface parts
 - Linkage-based joints where required
@@ -52,7 +52,7 @@ predictable kinematics rather than speed.
 
 ## Repository Structure (high-level)
 
-- `mechanics/`  
+- `3D/`  
   CAD models, laser-cut parts (DXF), and 3D-printable components (STEP/STL)
 
 - `electronics/`  
